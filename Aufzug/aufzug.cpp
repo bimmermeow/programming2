@@ -1,4 +1,4 @@
-#include "aufzug.h"
+//#include "aufzug.h"
 
 //using namespace Aufzug;
 
@@ -14,13 +14,13 @@ void Aufzug::reset() {
 }
 void Aufzug::auf() {
 	if(akt_stockwerk == ges_stockwerke) {
-	} else { 
+	} else {
 		akt_stockwerk++;
 	}
 }
 void Aufzug::ab() {
 	if(akt_stockwerk == 0) {
-	} else { 
+	} else {
 		akt_stockwerk--;
 	}
 }

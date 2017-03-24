@@ -6,8 +6,9 @@
 #include <stdio.h>
 #include "getch.cpp"
 #include "aufzug.h"
+#include "aufzug.cpp"
 
-using namespace std; 
+using namespace std;
 
 int main()
 {
@@ -18,9 +19,9 @@ int main()
   hans_peter.oberstesStockwerk(sw);
   cout << "Ein Aufzug mit " << sw << " Stockwerken wurde gebaut.\n";
   cout << "Sie befinden sich im " << hans_peter.stockwerk() << ". Stock.\n\n";
-  
+
   cout << "h = hoch, r = runter, x = aussteigen\n\n";
-  
+
   while(1<2) {
     string eingabe;
   	cin >> eingabe;
@@ -42,4 +43,3 @@ int main()
   	}
   }
 }
-
