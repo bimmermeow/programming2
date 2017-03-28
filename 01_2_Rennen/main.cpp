@@ -5,10 +5,11 @@
 #include <termios.h>
 #include <stdio.h>
 #include "getch.cpp"
+#include "spiel.h"
 
 using namespace std;
 
 int main() {
 	return 0;
-	cout << "test";
+	cout << "test" << endl;
 }

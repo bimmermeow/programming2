@@ -2,6 +2,7 @@ class Igel {
 private:
 	int salat;
 	int position;
+	int restliche_felder;
 public:
 	Igel();
 	bool ziehe(int felder);

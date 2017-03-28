@@ -1,3 +1,6 @@
+#include "hase.h"
+#include "igel.h"
+
 class Spiel {
 private:
 	Hase derHase;

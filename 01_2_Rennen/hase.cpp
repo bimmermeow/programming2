@@ -6,6 +6,9 @@ int Hase::getPosition() {
 int Hase::getKarotten() {
 	return karotten;
 }
+int Hase::getVorrat() {
+	return karotten;
+}
 Hase::Hase() {
 	position = 0;
 	karotten = 31;
