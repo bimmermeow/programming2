@@ -7,7 +7,7 @@ int Igel::getSalat() {
 	return salat;
 }
 int Igel::getVorrat() {
-	return salat;
+	return restliche_felder;
 }
 Igel::Igel() {
 	position = 0;

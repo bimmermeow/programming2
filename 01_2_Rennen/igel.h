@@ -1,3 +1,5 @@
+#pragma once
+
 class Igel {
 private:
 	int salat;

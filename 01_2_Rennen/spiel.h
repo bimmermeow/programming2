@@ -1,6 +1,8 @@
 #include "hase.h"
 #include "igel.h"
 
+#pragma once
+
 class Spiel {
 private:
 	Hase derHase;
