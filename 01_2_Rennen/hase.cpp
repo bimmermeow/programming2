@@ -1,3 +1,5 @@
+#include "hase.h"
+
 int Hase::getPosition() {
 	return position;
 }
@@ -10,19 +12,19 @@ Hase::Hase() {
 	fehlversuche = 0;
 }
 bool Hase::ziehe(int felder) {
-	kosten = 0;
+	int kosten = 0;
 	for(int i = felder; i>0;i--) {
 		kosten += i;
 	}
-	if(kosten > vorrat) {
+	if(kosten > karotten) {
 		fehlversuche++;
 		if(fehlversuche==3) {
 			if(felder > position) {
-				vorrat += (10*position);
+				karotten += (10*position);
 				position = 0;
 			} else {
 				position -= felder;
-				vorrat += (10*felder);
+				karotten += (10*felder);
 			}
 			fehlversuche = 0;
 			return true;
@@ -30,8 +32,8 @@ bool Hase::ziehe(int felder) {
 			return false;
 		}
 	} else {
-		vorrat -= kosten;
+		karotten -= kosten;
 		position += felder;
-		return true; 
+		return true;
 	}
 }

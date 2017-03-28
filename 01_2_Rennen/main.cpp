@@ -6,6 +6,9 @@
 #include <stdio.h>
 #include "getch.cpp"
 
+using namespace std;
+
 int main() {
 	return 0;
+	cout << "test";
 }
