@@ -1,17 +1,9 @@
 #include "igel.h"
+#include "spielfigur.cpp"
 
-int Igel::getPosition() {
-	return position;
-}
-int Igel::getSalat() {
-	return salat;
-}
-int Igel::getVorrat() {
-	return restliche_felder;
-}
+
 Igel::Igel() {
 	position = 0;
-	salat = 1;
 	restliche_felder = 10;
 }
 bool Igel::ziehe(int felder) {

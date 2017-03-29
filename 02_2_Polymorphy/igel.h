@@ -1,14 +1,8 @@
 #pragma once
-
-class Igel {
-private:
-	int salat;
-	int position;
-	int restliche_felder;
+// #include "spielfigur.h"
+class Igel : public Spielfigur {
 public:
 	Igel();
 	bool ziehe(int felder);
-	int getPosition();
 	int getSalat();
-	int getVorrat();
 };
