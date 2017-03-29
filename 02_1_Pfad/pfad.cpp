@@ -4,7 +4,7 @@
 using namespace std;
 
 Pfad::Pfad(int anz_punkte) {
-	pfad[anz_punkte];
+	pfad = new Punkt[anz_punkte];
 	akt_index = 0;
 }
 

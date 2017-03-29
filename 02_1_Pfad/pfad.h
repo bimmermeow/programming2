@@ -2,7 +2,7 @@
 
 class Pfad {
 private:
-	Punkt pfad[];
+	Punkt* pfad;
 	int akt_index;
 public:
 	Pfad(int anz_punkte);

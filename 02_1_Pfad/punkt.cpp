@@ -6,11 +6,9 @@ class Punkt{
 	int _x; // X−Koordinate
 	int _y; // Y−Koordinate
 public:
-	Punkt(int px, int py) {
-		cout << px << " " << py;
+	Punkt(int px=0, int py=0) {
 		_x = px;
 		_y = py;
-		cout << _x << " " << _y;
 	}
 	void print (){
 		cout << '(' << _x << ',' << _y << ')' << endl;

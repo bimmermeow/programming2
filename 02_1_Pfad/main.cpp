@@ -13,12 +13,14 @@
 
 int main() {
 	Pfad meinPfad(10);
-	Punkt ersterPunkt(5,0);
-	Punkt zweiterPunkt(1,6);
+	Punkt ersterPunkt(5,1);
+	// ersterPunkt.print();
 	meinPfad.insertKoord(ersterPunkt);
-	meinPfad.insertKoord(zweiterPunkt);
 	meinPfad.printKoord(0);
+	Punkt zweiterPunkt(1,6);
+	meinPfad.insertKoord(zweiterPunkt);
 	meinPfad.printKoord(1);
+	meinPfad.printKoord(2);
 	getch();
 	return 0;
 }
