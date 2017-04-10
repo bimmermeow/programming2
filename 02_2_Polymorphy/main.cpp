@@ -6,9 +6,10 @@
 #include <stdio.h>
 #include "getch.cpp"
 
-#include "spiel.cpp"
+#include "spielfigur.cpp"
 #include "hase.cpp"
 #include "igel.cpp"
+#include "spiel.cpp"
 
 using namespace std;
 

@@ -1,8 +1,9 @@
-#include "spiel.h"
 #include <cstdlib>
 #include <iostream>
 #include <iomanip>
 #include <ctime>
+
+#include "spiel.h"
 
 using namespace std;
 
@@ -16,7 +17,7 @@ int Spiel::getZiel() {
 	return ziel;
 }
 bool Spiel::getStand() {
-	cout << "[  Hase: " << setfill(' ') << setw(2) << derHase.getPosition() << " Karotten:     " << setfill(' ') << setw(2) << derHase.getKarotten() << " ] ";
+	cout << "[  Hase: " << setfill(' ') << setw(2) << derHase.getPosition() << " Karotten:     " << setfill(' ') << setw(2) << derHase.getVorrat() << " ] ";
 	cout << "[  Igel: " << setfill(' ') << setw(2) << derIgel.getPosition() << " Felder übrig: " << setfill(' ') << setw(2) << derIgel.getVorrat() << " ]             ";
 	if(derHase.getPosition()>=ziel || derIgel.getPosition()>=ziel ) {
 		return true;

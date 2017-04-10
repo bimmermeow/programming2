@@ -1,11 +1,8 @@
 #pragma once
 
 class Hase : public Spielfigur {
-private:
-	int karotten;
-	int fehlversuche;
 public:
+	int fehlversuche;
 	Hase();
 	bool ziehe(int felder);
-	int getKarotten();
 };

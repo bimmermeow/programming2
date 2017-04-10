@@ -1,24 +1,23 @@
 #include "igel.h"
-#include "spielfigur.cpp"
-
+// #include "spielfigur.cpp"
 
 Igel::Igel() {
 	position = 0;
-	restliche_felder = 10;
+	vorrat = 10;
 }
 bool Igel::ziehe(int felder) {
 	bool ret;
-	if(felder<restliche_felder) {
+	if(felder<vorrat) {
 		position += felder;
-		restliche_felder -= felder;
+		vorrat -= felder;
 		ret = true;
 	}
-	if(felder>restliche_felder) {
+	if(felder>vorrat) {
 		ret = false;
 	}
-	if(felder==restliche_felder) {
+	if(felder==vorrat) {
 		position += felder;
-		restliche_felder = 10;
+		vorrat = 10;
 		ret = true;
 	}
 	return ret;

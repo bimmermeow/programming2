@@ -7,5 +7,5 @@ int Spielfigur::getPosition() {
 	return position;
 }
 int Spielfigur::getVorrat() {
-	return restliche_felder;
+	return vorrat;
 }

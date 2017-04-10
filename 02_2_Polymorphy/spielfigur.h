@@ -1,8 +1,7 @@
 class Spielfigur {
-private:
-	int restliche_felder;
-	int position;
 public:
+	int position;
+	int vorrat;
 	Spielfigur();
 	int getPosition();
 	int getVorrat();
