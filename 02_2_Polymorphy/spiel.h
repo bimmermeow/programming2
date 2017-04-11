@@ -1,14 +1,14 @@
-// #include "hase.h"
-// #include "igel.h"
+#include "hase.h"
+#include "igel.h"
 
-#pragma once
+// #pragma once
 
 class Spiel {
 public:
-	Igel derIgel;
-	Hase derHase;
+	Spiel(int anzFelder, int anzHasen, int anzIgel);
+	Spielfigur* Spielfiguren[];
 	int ziel;
-	Spiel(int anzFelder);
+	int anzFiguren;
 	int getZiel();
 	int wuerfle();
 	void macheZug();

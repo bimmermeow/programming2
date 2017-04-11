@@ -22,3 +22,6 @@ bool Igel::ziehe(int felder) {
 	}
 	return ret;
 }
+string Igel::getKlassenname() {
+	return "Igel";
+}

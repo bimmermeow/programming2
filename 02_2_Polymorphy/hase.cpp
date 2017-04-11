@@ -32,3 +32,6 @@ bool Hase::ziehe(int felder) {
 		return true;
 	}
 }
+string Hase::getKlassenname() {
+	return "Hase";
+}

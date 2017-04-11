@@ -1,3 +1,6 @@
+
+using namespace std;
+
 class Spielfigur {
 public:
 	int position;
@@ -5,4 +8,7 @@ public:
 	Spielfigur();
 	int getPosition();
 	int getVorrat();
+	virtual string getKlassenname() = 0;
+	virtual bool ziehe(int felder) = 0;
+
 };
