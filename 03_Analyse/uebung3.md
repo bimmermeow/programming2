@@ -11,21 +11,25 @@ Die zu entwickelnde Systemerweiterung soll Ereignisfelder zum bestehenden Hase-u
 
 #### Anwendungsfall "Spiel spielen"
 
+| 		| 		|
 |--------------:|:---------------|
 | Name: 	| Spiel spielen |
 | Kurzbeschreibung: | Ein Spieler spielt eine Partie des Hase & Igel-Spiels. |
 | Akteur:	| Spieler |
 | Auslöser: 	| Spieler startet Programm `./a.out` |
 | Ergebnis:	| Spiel ist gespielt |
-| Ablauf:	| 1. Programm starten |
-|		| 2. Anzahl der Felder festlegen |
-|		| 3. Anzahl der Spielfiguren festlegen (jew. für Hase und Igel) |
-|		| 4. Spielzüge ausführen |
-|		| 	- Bei Betreten eines Ereignisfeldes: |
-|		| 	1. Ereigniskarte ziehen |
-|		| 	2. Ereignis ausführen |
-|		| 	- Wenn eine Figur das letzte Feld erreicht hat: |
-|		| 	1. Spiel beendet |
+
+###### Ablauf: 
+
+1. Programm starten 
+2. Anzahl der Felder festlegen 
+3. Anzahl der Spielfiguren festlegen (jew. für Hase und Igel)
+4. Spielzüge ausführen
+	- Bei Betreten eines Ereignisfeldes:
+		1. Ereigniskarte ziehen
+		2. Ereignis ausführen
+	- Wenn eine Figur das letzte Feld erreicht hat:
+		1. Spiel beendet
 
 
 ## Aufgabe 3.3: Klassendiagramm
