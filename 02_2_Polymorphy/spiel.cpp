@@ -3,9 +3,9 @@
 using namespace std;
 
 Spiel::Spiel(int anzFelder, int anzHasen, int anzIgel) {
-	cout << "Konstruktor von Spiel aufgerufen";
-	Spielfigur* Spielfiguren[20] = {0};
-	cout << "Array erstellt";
+	//cout << "Konstruktor von Spiel aufgerufen";
+	Spielfiguren[20] = {0};
+	//cout << "Array erstellt";
 	for (int i = 0; i < anzHasen; i++) {
 		Spielfiguren[i] = new Hase();
 	}
@@ -24,7 +24,7 @@ int Spiel::getZiel() {
 bool Spiel::getStand() {
 	bool imZiel = false;
 	for (int i = 0; i < anzFiguren; i++) {
-		cout << "[ "<< i << " " << Spielfiguren[i]->getKlassenname() << ": " << setfill(' ') << setw(2) << "] ";
+		cout << "[ " << Spielfiguren[i]->getKlassenname() << ": " << setfill(' ') << setw(2) << Spielfiguren[i]->getPosition() << "] ";
 		if(Spielfiguren[i]->getPosition()>=ziel) imZiel = true;
 	}
 	cout << endl;
@@ -35,7 +35,7 @@ int Spiel::wuerfle() {
 	return zahl;
 }
 void Spiel::macheZug() {
-	int anzFiguren = (sizeof(Spielfiguren)/sizeof(*Spielfiguren));
+	//int anzFiguren = (sizeof(Spielfiguren)/sizeof(*Spielfiguren));
 	for (int i = 0; i < anzFiguren; i++) {
 		Spielfiguren[i]->ziehe(wuerfle());
 	}

@@ -6,7 +6,7 @@
 class Spiel {
 public:
 	Spiel(int anzFelder, int anzHasen, int anzIgel);
-	Spielfigur* Spielfiguren[];
+	Spielfigur* Spielfiguren[20];
 	int ziel;
 	int anzFiguren;
 	int getZiel();
