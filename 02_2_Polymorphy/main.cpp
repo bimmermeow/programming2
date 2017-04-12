@@ -17,7 +17,8 @@
 using namespace std;
 
 int main() {
-	cout << "Hase vs. Igel - ein epischer Kampf" << endl;
+	char eschar = 27;
+	cout << eschar << "[1m" << "Hase vs. Igel - ein epischer Kampf" << eschar << "[0m" << endl;
 	cout << "Anzahl der zu erreichenden Felder angeben: ";
 	int runden;
 	cin >> runden;
