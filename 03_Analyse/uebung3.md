@@ -17,7 +17,7 @@ Die zu entwickelnde Systemerweiterung soll Ereignisfelder zum bestehenden Hase-u
 | Kurzbeschreibung: | Ein Spieler spielt eine Partie des Hase & Igel-Spiels. |
 | Akteur:	| Spieler |
 | Auslöser: 	| Spieler startet Programm `./a.out` |
-| Ergebnis:	| Spiel ist gespielt |
+| Ergebnis:	| Sieger steht fest |
 
 ###### Ablauf: 
 
