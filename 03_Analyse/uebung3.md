@@ -33,6 +33,8 @@ Die zu entwickelnde Systemerweiterung soll Ereignisfelder zum bestehenden Hase-u
 
 
 ## Aufgabe 3.3: Klassendiagramm
-| Spielfeld |
-|:---------:|
-|+Array felder |
+
+![Klassendiagramm](https://github.com/bimmermeow/programming2/raw/master/03_Analyse/class_diagram.png "Klassendiagramm")
+
+![Klassendiagramm](class_diagram.png "Klassendiagramm")
+
