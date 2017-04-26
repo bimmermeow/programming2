@@ -40,18 +40,9 @@
 - `main` beendet bei einem Gewinner die Schleife und gibt den Gewinner aus
 - `main` beendet das Programm
 
-# Fragen bzgl. Implementierung
-
-- [ ] Wie Spielfeld zuerst deklarieren und dann erstellen?
-
-
-# 2Do
-- [ ] ziehe() Bearbeiten
-	- [ ] kost nix
-	- [ ] -3
-- [ ] spielfeld.cpp
-
+```
 0: kein ereignis
 1: zug kost nix
 2: nommel würfeln
 3: 3 felder zurück
+```

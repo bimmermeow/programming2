@@ -9,3 +9,6 @@ int Spielfigur::getPosition() {
 int Spielfigur::getVorrat() {
 	return vorrat;
 }
+void Spielfigur::RVVLZWD() {
+	vorrat += vvvlz;
+}

@@ -10,6 +10,7 @@
 #include "getch.cpp"
 
 #include "spielfigur.cpp"
+#include "spielfeld.cpp"
 #include "hase.cpp"
 #include "igel.cpp"
 #include "spiel.cpp"

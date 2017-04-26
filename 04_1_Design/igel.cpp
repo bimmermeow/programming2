@@ -7,9 +7,16 @@ Igel::Igel() {
 }
 bool Igel::ziehe(int felder) {
 	bool ret;
+	vvvlz = 0;
+	if(felder == -3) {
+		vorrat += 3;
+		position -= 3;
+		return true;
+	}
 	if(felder<vorrat) {
 		position += felder;
 		vorrat -= felder;
+		vvvlz = felder;
 		ret = true;
 	}
 	if(felder>vorrat) {

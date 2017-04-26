@@ -7,6 +7,11 @@ Hase::Hase() {
 	fehlversuche = 0;
 }
 bool Hase::ziehe(int felder) {
+	vvvlz = 0;
+	if(felder == -3) {
+		position -= felder;
+		vorrat += (10*felder);
+	}
 	int kosten = 0;
 	for(int i = felder; i>0;i--) {
 		kosten += i;
@@ -28,6 +33,7 @@ bool Hase::ziehe(int felder) {
 		}
 	} else {
 		vorrat -= kosten;
+		vvvlz = kosten;
 		position += felder;
 		return true;
 	}
