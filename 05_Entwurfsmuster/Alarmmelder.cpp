@@ -6,6 +6,7 @@ using namespace std;
 Alarmmelder::Alarmmelder (float obere, float untere, Aktie* ziel) {
 	if(ziel!=0) {
 		beobachtete_aktie = ziel;
+		beobachtete_aktie->anmelden((Beobachter*)this);
 		beobachteter_kurs = 0;
 		untere_grenze = untere;
 		obere_grenze = obere;
