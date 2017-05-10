@@ -1,21 +1,36 @@
 #include "BeobachterZiel.h"
+#include "Beobachter.h"
 
-BeobachterZiel::BeobachterZiel () {
-	beobachter = { 0 };
-	akt_index = 0;
+BeobachterZiel::BeobachterZiel(void)
+{
+	for (int i=0; i<MAXBEOB; i++)
+	{
+		beobachterFeld[i] = 0;
+	}
+	aktuelleAnzahl = 0;
 }
-int BeobachterZiel::anmelden(Beobachter* b) {
-	beobachter[akt_index] = b;
-	beobachter[akt_index]->set_ziel(this);
-	akt_index++;
-	return (akt_index-1);
+
+BeobachterZiel::~BeobachterZiel(void)
+{
 }
-void BeobachterZiel::abmelden(int index) {
-	beobachter[index] = 0;
+
+bool BeobachterZiel::anmelden (Beobachter* b)
+{
+	bool retval = false;
+
+	if (aktuelleAnzahl < MAXBEOB)
+	{
+		beobachterFeld[aktuelleAnzahl] = b;
+		aktuelleAnzahl++;
+		retval = true;
+	}
+	return retval;
 }
-void BeobachterZiel::benachrichtigeAlle() {
-	for (size_t i = 0; i < 50; i++) {
-		if(beobachter[i]==0) continue;
-		beobachter[i]->aktualisiere();
+
+void BeobachterZiel::benachrichtigeAlle()
+{
+	for (int i=0; i<aktuelleAnzahl; i++)
+	{
+		beobachterFeld[i]->aktualisiere();
 	}
 }

@@ -1,6 +1,15 @@
 #include "Aktie.h"
+#include "BeobachterZiel.h"
 
-Aktie::Aktie () {
+Aktie::Aktie (string aname, string aisin, float akurs) {
+	name = aname;
+	isin = aisin;
+	kurs = akurs;
 }
-
-Aktie::~Aktie () { }
+float Aktie::get_kurs() {
+	return kurs;
+}
+void Aktie::setze_kurs(float akurs) {
+	kurs = akurs;
+	benachrichtigeAlle();
+}

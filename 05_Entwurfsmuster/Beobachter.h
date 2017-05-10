@@ -1,8 +1,9 @@
-class Beobachter {
-private:
-	BeobachterZiel* zielklasse;
+#pragma once
+
+class Beobachter
+{
 public:
-	Beobachter (BeobachterZiel* ziel = 0);
-	void set_ziel(BeobachterZiel* ziel);
-	virtual void aktualisiere ();
+	Beobachter(void);
+	virtual void aktualisiere() = 0;
+	~Beobachter(void);
 };

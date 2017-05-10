@@ -1,10 +1,22 @@
-class BeobachterZiel {
+#pragma once
+
+const int MAXBEOB=20;
+
+class Beobachter;
+
+class BeobachterZiel
+{
+	int aktuelleAnzahl;
+	Beobachter* beobachterFeld[MAXBEOB];
 public:
-	BeobachterZiel ();
-	int anmelden (Beobachter* b);
-	void abmelden (int index);
-	void benachrichtigeAlle ();
-private:
-	Beobachter* beobachter[50];
-	int akt_index;
+	BeobachterZiel(void);
+	bool anmelden(Beobachter* beob);
+	bool abmelden(Beobachter* beob) {
+		//TODO: vernuenftige implementierung
+		return false;
+	}
+	void benachrichtigeAlle();
+
+public:
+	~BeobachterZiel(void);
 };

@@ -1,7 +1,12 @@
+#pragma once
+
+#include "Beobachter.h"
+#include "Aktie.h"
+
 class Ticker : public Beobachter {
-public:
-	Ticker ();
-	void aktualisiere ();
-private:
 	float beobachteter_kurs;
+	Aktie* beobachtete_aktie;
+public:
+	Ticker (Aktie* ziel);
+	void aktualisiere ();
 };
