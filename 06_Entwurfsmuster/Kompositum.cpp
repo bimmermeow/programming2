@@ -30,23 +30,20 @@ bool Kompositum::fuegeHinzu (Komponente* k)
 
 void Kompositum::print()
 {
-	cout << zahl << ' ';
-
-	for (int i=0; i<aktuelleAnzahl; i++)
-	{
-		komponenten[i]->print();
-		cout << ' ';
-	}
-
+	if(zahl=='+') cout << '(';
+	komponenten[0]->print();
+	cout << zahl;
+	komponenten[1]->print();
+	if(zahl=='+') cout << ')';
 }
 
 int Kompositum::summe()
 {
-	// 	int sum = zahl;
-	// for (int i=0; i<aktuelleAnzahl; i++)
-	// {
-	// 	sum  += komponenten[i]->summe();
-	// }
-	// 	return sum;
-	return 3;
+	if(zahl=='+') {
+		return (komponenten[0]->summe() + komponenten[1]->summe());
+	}
+	if(zahl=='*') {
+		return (komponenten[0]->summe() * komponenten[1]->summe());
+	}
+	return 0;
 }

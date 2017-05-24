@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-#define MAXKOMP 100
+#define MAXKOMP 2
 
 class Kompositum: public Komponente {
 	Komponente* komponenten[MAXKOMP];

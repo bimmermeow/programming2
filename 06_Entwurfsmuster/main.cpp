@@ -2,6 +2,8 @@
 #include "Kompositum.h"
 #include <iostream>
 
+using namespace std;
+
 int main(){
 	//(1+2)*3
 	Blatt b1(1);
@@ -17,17 +19,17 @@ int main(){
 	km.fuegeHinzu(&b3);
 
 	b1.print();
-	std::cout << endl;
+	cout << endl;
 	b2.print();
-	std::cout << endl;
+	cout << endl;
 	b3.print();
-	std::cout << endl;
+	cout << endl;
 
 	kp.print();
-	std::cout << endl;
+	cout << endl;
 	km.print();
-	std::cout << endl;
-	// std::cout <<  k1.summe() << endl;
-
+	cout << endl;
+	cout << kp.summe() << endl;
+	cout << km.summe() << endl;
 	return 0;
 }
